@@ -10,7 +10,7 @@ body {
 	height: 100%;
 	background-color: #ffffff;
 	border-right: 2px solid grey;
-	transition: 1s linear;
+	transition: .5s linear;
 }
 #side-menu-bar img {
 	margin-left: 20%;
@@ -19,27 +19,30 @@ body {
 	margin-top: 3%;
 }
 
-#main-bar ,#contibutes {
+#join-us ,#contibutes ,#board ,#national-directors , #partners {
 	position: absolute;
 	left: 9%;
 	width: 91%;
 	height: 100%;
 	color: #24750B;
+	/*background-image: url("images/map.jpg");*/
 }
-#contibutes {
+
+#join-us , #contibutes ,#board ,#national-directors {
 	display: none;
 }
-#main-bar p,#main-bar h1 ,#contibutes p,#contibutes h1  {
+p, h1  {
 	font-family: sans-serif, serif, roboto;
+}
+p {
+	font-size: 150%;
+	color: #000000; 	
+}
+h1 {
+	font-size: 300%;
 	color: #24750B;
 }
-#main-bar p ,#contibutes p{
-	font-size: 150%;
-}
-#main-bar h1 ,#contibutes h1 {
-	font-size: 300%;
-}
-#main-bar a {
+#join-us a {
 	color: #24750B;
 	text-decoration: none;
 	font-weight: bold;
@@ -51,4 +54,46 @@ textarea {
 	height: 40%;
 	border: 4px solid #24750B ;
 	border-radius: 4px;
+}
+#founders-p , #board-p ,#national-directors-p ,#advisers-p, #group1 , #group2 , #group3 , #group4 {
+	position: absolute;
+	width: 22%;
+	height: 60%;
+	top: 30%;
+	text-align: center;
+	font-size: 150%;
+	font-family: sans-serif,serif, roboto;
+	color: #000000;	
+	font-weight: bold;
+}
+#founders-p , #group1 {
+	left: 0%;
+}
+#board-p , #group2 {
+	left: 24%;
+}
+#national-directors-p ,#group3 {
+	left: 48%;
+}
+#advisers-p , #group4{
+	left: 72%;
+}
+.board-images {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 9px solid #EADEDE;
+}
+#map {
+	position: absolute;
+	left: 0;
+	top: 30%;
+	width:95%;
+	height: 68%;
+}
+.group-images {
+	width: 98%;
+	height: 45%;
+	border: 2px solid #24750B;
+	/*border-radius: 5px;*/
 }
