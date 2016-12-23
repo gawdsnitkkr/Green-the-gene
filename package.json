@@ -1,0 +1,44 @@
+{
+  "name": "GreenTheGene",
+  "version": "1.0.0",
+  "description": "website for green the gene",
+  "contributors": [
+    {
+      "name": "Narendra Kumawat",
+      "email": ""
+    },
+    {
+      "name": "Rishabh Chanana",
+      "email": "rishabhchanana97@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "gsap": "latest",
+    "bootstrap": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "clean-css": "latest",
+    "jshint": "latest",
+    "rimraf": "latest",
+    "postcss-cli": "latest",
+    "uglify-js": "latest",
+    "stylus": "latest"
+  },
+  "scripts": {
+    "lint": "jshint src/js",
+    "clean": "rimraf dist",
+    "prebuild:js": "npm run lint",
+    "build:js": "cp src/js/* dist/resources/js/",
+    "build": "npm run build:js",
+    "predeploy": "rimraf deploy/ && mkdir deploy",
+    "deploy": "cp -r dist/* deploy/",
+    "postdeploy": "for %i in (deploy/resources/js/*) do uglifyjs deploy/resources/js/%i > deploy/resources/js/%~ni.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gawdsnitkkr/Green-the-gene.git"
+  },
+  "license": "MIT"
+}
