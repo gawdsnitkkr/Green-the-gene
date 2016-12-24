@@ -10,7 +10,7 @@ body {
 	background-position: center;
 	background-size: cover;
 }
-#intro {
+#circle {
 	position: fixed;
 	left: -30%;
 	top: -50%;
@@ -27,16 +27,31 @@ body {
 	width: 100%;
 	height: 100%; 
 }
-.row {
-	margin: 0px;
-	text-align: right;
-	font-size: 3em;
-	height: 10%;
-	padding-top: 0.8%;
-	padding-bottom: 0.8%;
-	width: 100%;
+ul {
+	display: inline;
+	list-style-type: none;
 }
-.row>div>a {
+li {
+	display: inline;
+	margin-left: 10px;
+}
+input {
+	border: 0px solid blue;
+	border-bottom-width: 4px;
+}
+#leftCol {
+	height: 100%;
+}
+#rightCol {
+	height: 100%;
+}
+#rightCol>.row {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-size: 3em;
+	text-align: center;
+}
+#rightCol>div>a {
 	margin-right: 100px;
 	text-decoration: none; 
 }
