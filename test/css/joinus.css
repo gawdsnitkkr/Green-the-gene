@@ -19,7 +19,6 @@ body {
 	left: -8%;
 	transition: .7s linear;
 }
-
 #side-menu-bar>img {
 	cursor: pointer;
 }
@@ -37,8 +36,13 @@ body {
 	font-weight: bold;
 	font-size: 120%;
 }
-#partners-images {
-	background-color: #24750B;
-	width: 250px;
-	height: 200px;
+.row>.col-sm-7 {
+	font-size: 150%;
+}
+.row>div>a {
+	font-weight: bold;
+	color: #000;
+}
+ .form-control {
+	border:2px solid #24750B;
 }
