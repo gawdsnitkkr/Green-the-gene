@@ -7,9 +7,10 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow-x: hidden;
 }
 .container {
-	position: fixed;
+	/*position: fixed;*/
 	top: 0px;
 	left: 0px;
 	width: 100%;
@@ -17,6 +18,7 @@ body {
 }
 #slide {
 	left: -8%;
+	position: fixed;
 	transition: .7s linear;
 }
 #side-menu-bar>img {
