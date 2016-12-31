@@ -1,0 +1,43 @@
+#navBar {
+	width: 10%;
+	height: 100%;
+	box-shadow: -2px 0px 5px 0px grey;
+	position: fixed;
+	top: 0px;
+	left: 90%;
+}
+#nav-bar-button {
+	margin-top: 20px;
+	position: fixed;
+	left: 90%;
+	width: auto;
+	font-size: inherit;
+	background: transparent;
+	border: 0px solid;
+	color: rgb(200, 200, 200);
+	box-shadow: 0px 0px 5px 0px grey;
+	display: none;	
+}
+#nav-bar-button:focus {
+	outline: none;
+}
+#nav-list {
+	list-style-type: none;
+	padding: 5px;
+	text-align: center;
+}
+
+.nav-list-icon {
+	padding-top: 20px;
+	font-size: 35px;
+}
+@media only screen and (max-width:768px) {
+	#navBar {
+		width: 40%;
+		left: 60%;
+		display: none;
+	}
+	#nav-bar-button {
+		display: initial;
+	}
+}
