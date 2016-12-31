@@ -36,3 +36,9 @@ footer {
 	padding: 20px;
 	margin: 0px;
 }
+#close {
+	transition: all 0.2s ease;
+}
+#close:hover {
+	transform: rotateZ(180deg);
+}
