@@ -1,0 +1,120 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gtgInit {
+  font-size: 14px;
+  line-height: 1.4;
+  min-height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gtgInit {
+    font-size: 18px;
+  }
+}
+
+.bl18 {
+    width: 100%;
+    height: 18px;
+}
+  
+.gtgInit .headOuter {
+  background-image: url("../images/background.jpg");
+  min-height: 7em;
+  padding: 2em 1em;
+}
+.gtgInit .headOuter .heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.gtgInit .headOuter .intro {
+  max-width: 960px;
+  font-family: "Raleway", sans-serif;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+.gtgInit .contOuter {
+  padding: 0.4em 1em;
+}
+.gtgInit .contOuter .contHead {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.gtgInit .contOuter .contHead .seeAllBtn {
+  font-size: 0.4em;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px;
+  margin-left: 1em;
+  border-radius: 20%;
+}
+.gtgInit .contOuter .contGrid {
+  max-width: 1024px;
+  margin: 0 auto;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.gtgInit .contOuter .contGrid .imgOuter {
+  padding: 10px;
+}
+@media screen and (min-width: 640px) {
+  .gtgInit .contOuter .contGrid .imgOuter {
+    width: 40%;
+    text-align: center;
+    display: inline-block;
+    padding: 8px;
+  }
+}
+.gtgInit .contOuter .contGrid .imgOuter .contImg {
+  max-width: 100%;
+}
+.gtgInit .contOuter .contGrid .imgOuter .contTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4em;
+}
+.gtgInit .contOuter .contGrid .infoOuter {
+  padding: 10px;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+}
+@media screen and (min-width: 640px) {
+  .gtgInit .contOuter .contGrid .infoOuter {
+    width: 60%;
+    float: right;
+    min-height: 100px;
+    padding: 24px;
+  }
+}
+.gtgInit .contOuter .contGrid .infoOuter .contUl {
+  list-style-type: square;
+}
+.gtgInit .contOuter .contGrid .infoOuter .contLi {
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+.gtgInit .contOuter .contGrid .infoOuter .contLi:hover {
+  cursor: pointer;
+  text-decoration:underline;
+}
+.gtgInit .contLoader {
+  display: none;
+}
