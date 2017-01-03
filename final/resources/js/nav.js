@@ -6,7 +6,7 @@ function showBar() {
 			rotationZ: 45,
 			x: 12.912,
 			y: -4.638,
-			ease: Power4.easeNone
+			ease: Back.easeOut
 		}
 		);
 		TweenMax.to ( "#nav-bar", 0.8, {
@@ -19,7 +19,7 @@ function showBar() {
 			rotationZ: -45,
 			x: 12.912,
 			y: 34.638,
-			ease: Power4.easeNone
+			ease: Back.easeOut
 		}
 		);
 		TweenMax.staggerTo(".nav-link", 0.1, 
@@ -36,7 +36,7 @@ function showBar() {
 		);
 		TweenMax.to ( "#home", 0.2, 
 		{
-			opacity: 0.1
+			opacity: 0.05
 		}	
 		);
 		
@@ -47,7 +47,7 @@ function showBar() {
 		{
 			opacity: 0,
 		},
-		 0.05
+		 0.02
 		);
 		TweenMax.to("#path4138", 0.5, 
 		{
@@ -55,7 +55,7 @@ function showBar() {
 			x: 0,
 			y: 0,
 			delay: 0.8,
-			ease: Power4.easeNone
+			ease: Back.easeIn
 		}
 		);
 		TweenMax.to("#path4138-3", 0.5, 
@@ -64,25 +64,25 @@ function showBar() {
 			x: 0,
 			y: 0,
 			delay: 0.8,
-			ease: Power4.easeNone
+			ease: Back.easeIn
 		}
 		);
 		TweenMax.to ( "#path4138-6", 0.5, 
 		{
 			opacity: 1,
-			delay: 1
+			delay: 1.2
 		}
 		);
 		TweenMax.to ( "#home", 0.2, 
 		{
 			opacity: 1,
-			delay: 0.5
+			delay: 1
 		}	
 		);
 		TweenMax.to ( "#nav-bar", 0.8, {
 			x: ($('#nav-bar')[0].offsetWidth),
-			ease: Back.easeOut,
-			delay: 0.5
+			ease: Back.easeIn,
+			delay: 0.2
 		});
 		toggle = 0;
 	}
