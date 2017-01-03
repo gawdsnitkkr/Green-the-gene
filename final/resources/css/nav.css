@@ -7,26 +7,25 @@
 	top: 20px;
 	left: 95%;
 	width: 4%;
-	z-index: 5;
+	z-index: 20;
 	cursor: pointer;
 }
 #nav-bar {
 	position: fixed;
-	z-index: 4;
+	z-index: 10;
 	top: 0px;
-	left: 110%;
+	left: 100%;
 	width: 20%;
 	background: rgb(255, 255, 255);
 	height: 100%;
 	overflow-y: auto;
-	transition: all 0.5s ease;
 	box-shadow: -3px 0px 5px 0px rgb(220,220,220);
 }
 #nav-bar>ul {
 	list-style-type: none;
 	padding: 0px;
 	text-align: center;
-	margin-top: 110px; 
+	margin-top: 110px !important; 
 }
 #nav-bar>ul>li {
 	margin-bottom: 20px;

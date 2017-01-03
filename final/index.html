@@ -1,30 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Green the Ganee</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<title>Green the Gene</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/nav.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/main.css">
 </head>
 <body>
+<!-- home page goes here-->
+	<div id = "home">
+		<!-- upper part -->
+		<div class = "row">
+			<!-- left side image -->
+			<div class = "col-sm-4 col-md-4">
+				<img src = "resources/images/bannerlogo.png" id = "logo"/>
+			</div>
+			<!-- right side -->
+			<div class = "col-sm-8 col-md-6" id = "info">
+				<p id = "about">a global children and youth led movement for grassroots environmental action.
+				</p>
+				<blockquote id = "quote">
+					"We are taking on the greatest challenge of our generation by building powerful on-ground initiatives for our future."
+					<footer>
+							Madhav Dutt
+						<p>
+							(Founder & President)
+						</p>
+					</footer>
+				</blockquote>
+			</div>
+			<!-- not to be kep balnk in phones -->
+			<div class="col-sm-0 col-md-2">
+			<!-- blank space -->
+			</div>
+		</div>
+		<!-- form part -->
+		<div class = "row">
+			<form>
+				<ul>
+					<li><input type="text" name="">
+					<li><input type="text" name="">
+					<li><input type="text" name="">
+				</ul>
+			</form>
+		</div>
+	</div>
+<!-- home page ends here -->
 
-<div class="container">
-  <form class="form-inline">
-    <div class="form-group">
-      <input type="email" class="form-control" id="email" placeholder="Enter email">
-    </div>
-     <div class="form-group">
-     <input type="text" class="form-control" id="country" placeholder="country">
-    </div>
-    <div class="form-group">
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-    </div>
-   
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
+<!-- nav bar code -->
+	<!-- nav button -->
+	<div id = "nav-button" onclick = "showBar()"> 
+		<svg id="svg2" viewBox="0 0 100 64.899936">
+		  	<g
+		     id="layer1"
+		     transform="translate(1.6105e-7,-52.269023)">
+		    <path
+		       id="path4138"
+		       style="fill:none;stroke:#9fc33d;stroke-width:4.9000001"
+		       inkscape:connector-curvature="0"
+		       d="m 0,54.719 100,0" />
+		    <path
+		       id="path4138-3"
+		       style="fill:none;stroke:#346007;stroke-width:4.9000001"
+		       inkscape:connector-curvature="0"
+		       d="m 0,84.719 100,0" />
+		    <path
+		       id="path4138-6"
+		       style="fill:none;stroke:#015498;stroke-width:4.9000001"
+		       inkscape:connector-curvature="0"
+		       d="M -1.6105e-7,114.719 100,114.719" />
+		  	</g>
+		</svg>
+	</div>
+	<!-- nav bar links -->
+	<div id = "nav-bar">
+	<ul>
+		<li><a href="#" class = "nav-link">home</a>
+		<li><a href="#" class = "nav-link">initiatives</a>
+		<li><a href="#" class = "nav-link">team</a>
+		<li><a href="#" class = "nav-link">parters</a>
+		<li><a href="#" class = "nav-link">resources</a>
+		<li><a href="#" class = "nav-link">join us</a>
+		<li><a href="#" class = "nav-link">contribute</a>
+		<li><a href="#" class = "nav-link">contact</a>
+		<li>&nbsp;
+		<li><a href="#" class = "nav-link"><img src = "resources/images/madeby.png"</a>
+	</ul>
 </div>
+<!-- nav bar code ends here -->
 
 </body>
+<script src="resources/js/TweenMax.min.js"></script>
+<script src="resources/js/jquery.min.js"></script>
+<script src="resources/js/main.js"></script>
+<script src="resources/js/nav.js"></script>
 </html>
