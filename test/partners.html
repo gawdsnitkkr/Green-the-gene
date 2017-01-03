@@ -6,51 +6,46 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css">
 	<link rel = "stylesheet" type = "text/css" href = "css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
 	<link rel = "shortcut icon" href = "images/logo.png" />
 </head>
-<body onload="move_side_bar()">
+<body >
 <div class="container">
-	<div class="container" id="slide">
-		<div class = "row"><br>
-			<div class = "col-sm-1" id="side-menu-bar">
-		 		 <img src="images/home.svg" height="50px" width="50px"><br><br>
-		  	</div>	  
-		</div>
-		<div class = "row">
-			<div class = "col-sm-1" id="side-menu-bar">
-		 		 <img src="images/home.svg" height="50px" width="50px"><br><br>
-		  	</div>
-		</div>
-		<div class = "row">
-			<div class = "col-sm-1" id="side-menu-bar">
-		 		 <img src="images/home.svg" height="50px" width="50px"><br><br>
-		  	</div>
-		</div>
-		<div class = "row">
-			<div class = "col-sm-1" id="side-menu-bar">
-		 		 <img src="images/home.svg" height="50px" width="50px"><br><br>
-		  	</div>
-		</div>
-		<div class = "row">
-			<div class = "col-sm-1" id="side-menu-bar">
-		 		 <img src="images/home.svg" height="50px" width="50px"><br><br>
-		  	</div>
-		</div>
-		<div class = "row">
-			<div class = "col-sm-1" id="side-menu-bar">
-		 		 <img src="images/home.svg" height="50px" width="50px"><br><br>
-		  	</div>
-		</div>
-		<div class = "row">
-			<div class = "col-sm-1" id="side-menu-bar">
-		 		 <img src="images/home.svg" height="50px" width="50px"><br><br>
-		  	</div>
-		</div>
-		<div class = "row">
-			<div class = "col-sm-1" id="side-menu-bar">
-		 		 <img src="images/home.svg" height="50px" width="50px"><br><br>
-		  	</div>
-		</div>
+	<div id = "nav-button" onclick = "showBar()"> 
+		<svg id="svg2" viewBox="0 0 100 64.899936">
+		  	<g
+		     id="layer1"
+		     transform="translate(1.6105e-7,-52.269023)">
+		    <path
+		       id="path4138"
+		       style="fill:none;stroke:#9fc33d;stroke-width:4.9000001"
+		       inkscape:connector-curvature="0"
+		       d="m 0,54.719 100,0" />
+		    <path
+		       id="path4138-3"
+		       style="fill:none;stroke:#346007;stroke-width:4.9000001"
+		       inkscape:connector-curvature="0"
+		       d="m 0,84.719 100,0" />
+		    <path
+		       id="path4138-6"
+		       style="fill:none;stroke:#015498;stroke-width:4.9000001"
+		       inkscape:connector-curvature="0"
+		       d="M -1.6105e-7,114.719 100,114.719" />
+		  	</g>
+		</svg>
+	</div>
+	<div id = "nav-fade"></div>
+	<div id = "nav-bar">
+		<ul>
+			<li><a href="#">home</a>
+			<li><a href="#">initiatives</a>
+			<li><a href="#">team</a>
+			<li><a href="#">parters</a>
+			<li><a href="#">resources</a>
+			<li><a href="#">join us</a>
+			<li><a href="#">contribute</a>
+			<li><a href="#">contact</a>
+		</ul>
 	</div>
 	<div class="container" id="main-containt">
 		<div class = "row">
@@ -100,12 +95,45 @@
 			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 		  	</div> 	
+		</div><br><br>
+		<div class = "row">
+			<div class = "col-sm-11" >
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		  	</div> 	
+		</div><br><br>
+		<div class = "row">
+			<div class = "col-sm-11" >
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		  	</div> 	
+		</div><br><br>
+		<div class = "row">
+			<div class = "col-sm-11" >
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		  	</div> 	
+		</div><br><br>
+		<div class = "row">
+			<div class = "col-sm-11" >
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			  	<img src="images/partners/1.jpg" class="img-rounded" alt="partners" id="partners-images" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		  	</div> 	
 		</div>
 	</div>
 </div>
 </body>
-<script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/animates.js"></script>
 <script type="text/javascript" src="js/typewrite.js"></script>
+<script type="text/javascript" src = "js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/animates.js"></script>
+<script type="text/javascript" src = "js/nav.js"></script>
 </html>

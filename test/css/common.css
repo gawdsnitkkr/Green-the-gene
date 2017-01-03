@@ -3,11 +3,15 @@ body {
 	padding: 0px;
 	width: 100%;
 	height: 100%;
-	background-image: url("../images/background.jpg");
+	/*background-image: url("../images/background.jpg");*/
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow-x: hidden;
+}
+@font-face {
+	font-family: roboto;
+	src: url(robotolight.ttf);
 }
 .container {
 	/*position: fixed;*/
@@ -27,12 +31,12 @@ body {
 }
 #main-containt {
 	position: absolute;
-	left: 1%;
+	left: 4%;
 }
 .text-left {
 	color: green;
 	font-weight: bold;
-	font-family: sans-serif;
+	font-family: roboto, sans-serif;
 	font-size: 350%;		
 }
 .row>.col-sm-9>p {
@@ -76,7 +80,14 @@ textarea {
 	font-size: 20
 	 0%;
 }
-
+::-webkit-scrollbar {
+    width: 10px;
+    color: red;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 106px #24750B; 
+}
 @media only screen and (max-width: 1024px) {
 
 

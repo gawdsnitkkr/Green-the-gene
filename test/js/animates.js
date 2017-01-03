@@ -2,16 +2,21 @@ $(document).ready(function(){
     
     
 	 $(function(){
-	     chainAnim('.img-circle , .img-rounded ',100,'1');
+	     chainAnimation('.img-circle , .img-rounded ',100,'1');
 	});
 
-	function chainAnim(e,s,o) {
+	function chainAnimation(e,s,o) {
         var $fade = $(e);
         var code = function() {console.log('Done.');};
         $fade.each(function( i ){
             $(this).delay(i * s).fadeTo(s,o,code);
         });
 	} 
+
+    // function animateTextarea(){
+    //     $("#comment").attr("rows","12");
+    // };
+    // animateTextarea();
 	$('.img-rounded , .img-circle').hover(function() {
 	  $(this).css({opacity:.8});
 	}).mouseleave( function () {
@@ -28,4 +33,4 @@ $(document).ready(function(){
         actions: [{type: 'PARTNERS '},]
     });
        
-});
+}(jQuery));
