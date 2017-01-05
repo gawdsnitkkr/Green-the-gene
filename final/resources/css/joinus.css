@@ -19,7 +19,7 @@ header {
 	left: 0px;
 	display: none;
 }
-#partners {
+#joinus {
 	transform: scale(2);
 	opacity: 0;
 	will-change: all;
@@ -31,12 +31,12 @@ h1 {
 p {
 	font-size: 30px;
 }
-.part-img {
-	width: 80%;
-	opacity: 1;
+p>a {
+	color: #235814;
+	text-decoration: none;
 }
-.row {
-	margin-bottom: 30px;
+p>a:hover {
+	color: #235814;
 }
 footer {
 	text-align: center;
@@ -58,5 +58,8 @@ footer>img {
 @media only screen and (max-width:321px) {
 	#sign-up>li {
 		display: block;
+	}
+	b{
+		font-size: 22px;
 	}
 }

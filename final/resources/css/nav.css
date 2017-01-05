@@ -28,14 +28,27 @@
 	margin-top: 110px !important; 
 }
 #nav-bar>ul>li {
-	margin-bottom: 20px;
+	margin-bottom: 15px;
+	color: #429124 !important;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	transition: background 0.5s ease;
+}
+.active {
+	border: 0px solid #1F630C;
+	border-left-width: 8px;
 }
 #nav-bar>ul>li>a {
 	text-decoration: none;
 	font-size: 2em;
 	font-family: roboto;
-	color: #429124;
+	color: inherit;
 	opacity: 0;
+	transition: all 0.2s ease;
+}
+#nav-bar>ul>li:hover {
+	color: white !important;
+	background: #1F630C;
 }
 #nav-fade {
 	background: rgba(80, 80, 80, 0.5);
