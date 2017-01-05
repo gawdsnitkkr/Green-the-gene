@@ -42,10 +42,20 @@ footer {
 	text-align: center;
 	padding-top: 20px;
 	z-index: 250;
-	margin-bottom: 20px;
 }
-footer>img {
-	height: 2%;
+footer>ul {
+	list-style-type: none;
+}
+footer>ul>li {
+	display: inline;
+	margin-right: 10px;
+}
+footer>ul>li>img {
+	width: 40px;
+	transition: all 0.5s ease;
+}
+footer>ul>li>img:hover {
+	transform: scale(1.5);
 }
 @media only screen and (max-width:426px) {
 	#sign-up>li {
