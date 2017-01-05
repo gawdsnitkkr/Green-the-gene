@@ -1,0 +1,59 @@
+@font-face {
+	font-family: roboto;
+	src: url(robotolight.ttf);
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	font-family: roboto;
+}
+header {
+	background: white;
+	height: 12%;
+	width: 100%;
+	z-index: 8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+#partners {
+	transform: scale(2);
+	opacity: 0;
+}
+h1 {
+	font-size: 48px;
+	color: #235814;
+}
+p {
+	font-size: 30px;
+}
+.part-img {
+	width: 80%;
+	opacity: 1;
+}
+.row {
+	margin-bottom: 30px;
+}
+footer {
+	text-align: center;
+	padding-top: 20px;
+	z-index: 250;
+}
+footer>img {
+	height: 2%;
+}
+@media only screen and (max-width:426px) {
+	#sign-up>li {
+		display: block;
+	}
+	header {
+		display: initial;
+	}
+}
+@media only screen and (max-width:321px) {
+	#sign-up>li {
+		display: block;
+	}
+}

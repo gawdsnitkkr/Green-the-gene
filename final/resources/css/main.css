@@ -7,8 +7,20 @@ body {
 	padding: 0px;
 	overflow-x: hidden;
 }
+header {
+	background: white;
+	height: 12%;
+	width: 100%;
+	z-index: 8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
 #home {
-	transform: scale(0.95);
+	opacity: 0;
+	transform: scale(2);
+	will-change: all;
 }
 #logo {
 	width: 60%;
@@ -63,4 +75,45 @@ body {
 	border: 0px solid;
 	text-transform: uppercase;
 	font-size: 20px;
+	color: #015498;
+	font-weight: bolder;
+	transition: all 0.5s ease;
+}
+#sign-up-but:hover {
+	font-weight: lighter;
+}
+footer {
+	text-align: center;
+	padding-top: 20px;
+	z-index: 250;
+}
+footer>img {
+	height: 2%;
+}
+@media only screen and (max-width:426px) {
+	#logo {
+		height: 100vh !important;
+		width: 100%;
+		margin-left: 0%;
+	}
+	#about {
+		font-size: 24px;
+	}
+	#sign-up>li {
+		display: block;
+	}
+	header {
+		display: initial;
+	}
+}
+@media only screen and (max-width:321px) {
+	#logo {
+		height: 90vh !important;
+		width: 100%;
+		margin-left: 0%;
+		margin-top: 10vh;
+	}
+	#sign-up>li {
+		display: block;
+	}
 }

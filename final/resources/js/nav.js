@@ -34,11 +34,7 @@ function showBar() {
 			opacity: 0
 		}
 		);
-		TweenMax.to ( "#home", 0.2, 
-		{
-			opacity: 0.05
-		}	
-		);
+		exit();
 		
 		toggle = 1;
 	}
@@ -73,12 +69,7 @@ function showBar() {
 			delay: 1.2
 		}
 		);
-		TweenMax.to ( "#home", 0.2, 
-		{
-			opacity: 1,
-			delay: 1
-		}	
-		);
+		enter();
 		TweenMax.to ( "#nav-bar", 0.8, {
 			x: ($('#nav-bar')[0].offsetWidth),
 			ease: Back.easeIn,

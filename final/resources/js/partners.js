@@ -1,12 +1,12 @@
 function exit() {
-	TweenMax.to ( "#home", 0.2, 
+	TweenMax.to ( "#partners", 0.2, 
 		{
 			opacity: 0.05
 		}	
 		);
 }
 function enter() {
-	TweenMax.to ( "#home", 0.2, 
+	TweenMax.to ( "#partners", 0.2, 
 		{
 			opacity: 1,
 			delay: 1
@@ -14,10 +14,10 @@ function enter() {
 		);
 }
 function intro() {
-	TweenMax.to ( "#home", 0.5, 
+	TweenMax.to ( "#partners", 0.5, 
 		{
 			opacity: 1,
-			scale: 0.95,
+			scale: 0.90,
 			delay: 0.2,
 			ease: Back.easeOut
 		}
