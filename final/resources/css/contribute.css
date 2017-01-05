@@ -14,12 +14,12 @@ header {
 	width: 100%;
 	z-index: 8;
 	opacity: 0;
-	position: fixed !important;
+	position: fixed;
 	top: 0px;
 	left: 0px;
 	display: none;
 }
-#joinus {
+#contribute {
 	transform: scale(2);
 	opacity: 0;
 	will-change: all;
@@ -30,13 +30,6 @@ h1 {
 }
 p {
 	font-size: 30px;
-}
-p>a {
-	color: #235814;
-	text-decoration: none;
-}
-p>a:hover {
-	color: #235814;
 }
 footer {
 	text-align: center;
