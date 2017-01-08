@@ -34,6 +34,12 @@ function showBar() {
 			opacity: 0
 		}
 		);
+		TweenMax.to ( ".active", 0.1, 
+		{
+			opacity: 1,
+			delay: 0.5
+		}
+		);
 		exit();
 		
 		toggle = 1;
@@ -67,6 +73,12 @@ function showBar() {
 		{
 			opacity: 1,
 			delay: 1.2
+		}
+		);
+		TweenMax.to ( ".active", 0.1, 
+		{
+			opacity: 0,
+			delay: 0.2
 		}
 		);
 		enter();

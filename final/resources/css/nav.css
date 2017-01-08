@@ -37,6 +37,7 @@
 .active {
 	border: 0px solid #1F630C;
 	border-left-width: 8px;
+	opacity: 0;
 }
 #nav-bar>ul>li>a {
 	text-decoration: none;

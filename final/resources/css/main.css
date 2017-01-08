@@ -77,11 +77,10 @@ header {
 	text-transform: uppercase;
 	font-size: 20px;
 	color: #015498;
-	font-weight: bolder;
-	transition: all 0.5s ease;
+	transition: all 0.2s ease;
 }
 #sign-up-but:hover {
-	font-weight: lighter;
+	padding-left: 30px;
 }
 footer {
 	text-align: center;

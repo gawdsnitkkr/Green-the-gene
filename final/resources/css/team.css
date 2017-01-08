@@ -35,12 +35,47 @@ header {
 	background: transparent;
 	margin-right: 30px;
 	font-size: 30px;
-	color: color: #235814;
+	color: #235814;
 	border: 0px solid #235814;
 	border-bottom-width: 2px;
 }
 *:focus { 
 	outline: none;
+}
+#map {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 500 !important;
+	background: rgba(255, 255, 255, 0.9);
+	width: 100%;
+	height: 100%;
+	transform: scale(0);
+	opacity: 0;
+}
+#map>#top {
+	text-align: right;
+	margin-top: 1%;
+}
+#map>p {
+		text-align: center;
+		font-size: 18px;
+}
+#close-btn {
+	cursor: pointer;
+	margin-right: 30px;
+	font-size: 24px;
+}
+#map>svg {
+	width: 70%;
+	margin-left: 15%;
+}
+#asia, #africa, #europe, #northamerica, #southamerica {
+	cursor: pointer;
+	fill: #235814 !important;
+}
+#asia:nth-child(even) {
+	fill: #235814 !important;
 }
 .col-md-4, .col-md-3 {
 	text-align: center;

@@ -39,19 +39,38 @@ function head() {
 	}
 }
 $('#fnd-btn').click(function () {
-	$('#founders').show(500);
-	$('#board').hide(200);
-	$('#advisors').hide(200);
+	$('#founders').show(200);
+	$('#board').hide(0);
+	$('#advisors').hide(0);
 	$('#h-dis').html("Founders");
 });
 $('#brd-btn').click(function () {
-	$('#board').show(500);
-	$('#founders').hide(200);
+	$('#board').show(200);
+	$('#founders').hide(0);
+	$('#advisors').hide(0);
 	$('#h-dis').html("Board");
 });
 $('#adv-btn').click(function () {
-	$('#advisors').show(500);
-	$('#founders').hide(200);
-	$('#board').hide(200);
+	$('#advisors').show(200);
+	$('#founders').hide(0);
+	$('#board').hide(0);
 	$('#h-dis').html("Advisors");
+});
+$('#ndir-btn').click(function () {
+	TweenMax.to ( "#map", 0.5, 
+		{
+			opacity: 1,
+			scale: 1,
+			ease: Back.easeOut
+		}
+		);
+});
+$('#close-btn').click(function () {
+	TweenMax.to ( "#map", 0.5, 
+		{
+			opacity: 0,
+			scale: 0,
+			ease: Back.easeIn
+		}
+		);
 });
