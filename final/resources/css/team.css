@@ -47,7 +47,7 @@ header {
 	top: 0px;
 	left: 0px;
 	z-index: 500 !important;
-	background: rgba(255, 255, 255, 0.9);
+	background: rgba(255, 255, 255, 0.95);
 	width: 100%;
 	height: 100%;
 	transform: scale(0);
@@ -74,8 +74,28 @@ header {
 	cursor: pointer;
 	fill: #235814 !important;
 }
-#asia:nth-child(even) {
-	fill: #235814 !important;
+.col-sm-4 {
+	text-align: center;
+}
+.close-mem-btn {
+	cursor: pointer;
+	text-align: center;
+	font-size: 24px;
+	padding-right: 30px;
+	padding-top: 30px;
+}
+#asia-members, #europe-members, #northamerica-members, #southamerica-members, #africa-members {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 520;
+	background: rgba(255, 255, 255, 0.9);
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	transform: scale(0);
+	opacity: 0;
+	text-align: right;
 }
 .col-md-4, .col-md-3 {
 	text-align: center;
